@@ -1,0 +1,8 @@
+.createdBy {
+  text-decoration: none;
+  color: #fff;
+}
+.createdBy:hover {
+  text-decoration: underline;
+  color: blue;
+}

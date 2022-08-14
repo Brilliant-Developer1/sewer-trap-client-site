@@ -1,0 +1,26 @@
+#hidebar {
+  height: 45px !important;
+}
+@media screen and (max-width: 450px) {
+  .hidebar {
+    height: 70px;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 780px) {
+  .hidebar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .hidebar_close {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+}
