@@ -9,7 +9,7 @@ const Header = () => {
     fontWeight: 700,
   });
   return (
-    <Box sx={{}}>
+    <Box id="home">
       <Box
         sx={{
           backgroundImage: `url(${sewertruck1})`,
@@ -25,7 +25,13 @@ const Header = () => {
           alignItems: 'center',
         }}
       >
-        <Box sx={{ width: { xs: '100%', sm: '60%', md: '40%' }, padding: 0 }}>
+        <Box
+          sx={{
+            marginTop: 6,
+            width: { xs: '100%', sm: '60%', md: '40%' },
+            padding: 0,
+          }}
+        >
           <Box sx={{ background: 'rgba(0, 0, 0, 0.5)', color: 'white' }}>
             <Typography align="center" variant="h5" pt={8}>
               Let Us Service Your Tanks

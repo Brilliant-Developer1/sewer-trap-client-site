@@ -8,6 +8,7 @@ import {
   Stack,
   styled,
   TextField,
+  Toolbar,
   Typography,
 } from '@mui/material';
 import React, { useRef } from 'react';
@@ -49,6 +50,8 @@ const ContactUs = () => {
   };
   return (
     <div>
+      <Toolbar id="contactus" />
+
       <Container sx={{ mt: 3 }}>
         <Typography
           color={'#ef233c'}
