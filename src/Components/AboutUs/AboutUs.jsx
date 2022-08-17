@@ -75,12 +75,12 @@ const AboutUs = () => {
                   component="div"
                   sx={{ padding: '15px' }}
                 >
-                  COMMERCIAL * INDUSTRIAL * RESIDENTIAL
+                  * COMMERCIAL * INDUSTRIAL * RESIDENTIAL
                 </Typography>
                 <Typography variant="h5" fontWeight={'500'} component="div">
                   <ul>
-                    <li>We are located in Savannah Georgia</li>
-                    <li>We are certified, license and insured</li>
+                    <li>We are located in Savannah, Georgia</li>
+                    <li>We are certified, licensed and insured</li>
                     <li>
                       We will pump, clean & save your business thousands of
                       dollars
@@ -89,7 +89,7 @@ const AboutUs = () => {
                 </Typography>
                 <Typography variant="h5" fontWeight={'500'} component="div">
                   <b>
-                    Here's what we do, that no other company does:
+                    Here's What we do, that no other company does:
                     <ol>
                       <li>
                         We don't charge or clients extra for emergency calls

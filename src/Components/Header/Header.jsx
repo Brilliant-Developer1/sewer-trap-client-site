@@ -27,7 +27,7 @@ const Header = () => {
       >
         <Box
           sx={{
-            marginTop: 6,
+            marginTop: { xs: 0, sm: 0, md: 15 },
             width: { xs: '100%', sm: '60%', md: '40%' },
             padding: 0,
           }}

@@ -47,6 +47,7 @@ const Navbar = props => {
           <StyledMenu sx={{ display: { xs: 'none', sm: 'none', md: 'flex' } }}>
             {MenuItems.map(item => (
               <a
+                className="Nav-links"
                 style={{
                   textDecoration: 'none',
                   color: 'black',

@@ -11,8 +11,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import { fontSize } from '@mui/system';
 import './Footer.css';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
@@ -74,7 +74,7 @@ const Footer = () => {
       </Container>
       <Box sx={{ background: '#bc0411', padding: 1 }}>
         <Typography align="center" variant="body1">
-          Created With 🤍 By{' '}
+          Made With 🤍 By{' '}
           <a
             className="createdBy"
             href="https://abid-portfolio.netlify.app/"
@@ -85,6 +85,10 @@ const Footer = () => {
           </a>{' '}
         </Typography>
       </Box>
+      <MessengerCustomerChat
+        pageId="266377000079581"
+        appId="2032616256908551"
+      />
     </Box>
   );
 };

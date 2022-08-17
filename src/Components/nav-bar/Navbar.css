@@ -2,3 +2,8 @@
 .phone-call:hover {
   background-color: #da2036 !important;
 }
+
+.Nav-links:hover {
+  color: #ef233c !important;
+  transition-duration: 0.3s;
+}
