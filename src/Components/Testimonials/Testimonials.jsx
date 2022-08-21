@@ -84,6 +84,7 @@ const Testimonials = () => {
             height: { xs: '100%', md: '230px' },
             backgroundColor: '#e9ecef',
             padding: 3,
+            textAlign: { xs: 'center', sm: 'left' },
           }}
         >
           <Typography variant="h5">
