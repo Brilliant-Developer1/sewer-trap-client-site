@@ -64,18 +64,19 @@ const AboutUs = () => {
                   variant="h5"
                   fontWeight={'700'}
                   component="div"
+                  width={{ xs: '100%', sm: '90%', md: '65%' }}
                 >
-                  WE SPECIALIZE IN PUMPING SEPTIC TANKS AND GREASE TRAPS, WHERE
-                  ALL WORK IS DONE WITH PRIDE AND PERFECTION.
+                  WE SPECIALIZE IN PUMPING GREASE TRAPS, WHERE ALL WORK IS DONE
+                  WITH PRIDE AND PERFECTION.
                 </Typography>
                 <Typography
                   align="center"
                   variant="h5"
                   fontWeight={'500'}
                   component="div"
-                  sx={{ padding: '15px' }}
+                  sx={{ padding: '15px', color: '#ef233c' }}
                 >
-                  * COMMERCIAL * INDUSTRIAL * RESIDENTIAL
+                  RESTAURANT • COMMERCIAL & INDUSTRIAL
                 </Typography>
                 <Typography variant="h5" fontWeight={'500'} component="div">
                   <ul>
@@ -89,16 +90,19 @@ const AboutUs = () => {
                 </Typography>
                 <Typography variant="h5" fontWeight={'500'} component="div">
                   <b>
-                    Here's What we do, that no other company does:
+                    <span style={{ color: '#ef233c' }}>
+                      Here's What we do, that no other company does:
+                    </span>
                     <ol>
                       <li>
-                        We don't charge or clients extra for emergency calls
+                        We don't charge our clients extra for emergency calls
                       </li>
                       <li>We are AVAILABLE DAY & NIGHT</li>
                       <li>
                         We pressure wash the grease trap at NO EXTRA COST to our
                         clients
                       </li>
+                      <li>We jet your pipes at NO EXTRA COST</li>
                     </ol>
                   </b>
                 </Typography>

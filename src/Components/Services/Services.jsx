@@ -64,8 +64,8 @@ const Services = () => {
           align="center"
           variant="h4"
         >
-          Grease trap cleaning Solutions for Restaurant, Commercial and
-          Industrial
+          Grease trap cleaning solutions for: <br /> RESTAURANT • COMMERCIAL &
+          INDUSTRIAL TANKS
         </Typography>
         <Typography align="center" variant="h6">
           Get Complete Grease Trap Services
@@ -88,7 +88,7 @@ const Services = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Standing Grease Trap
+                    Grease Trap: Standing
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     Grease traps fill up fast, so you must have a regular
@@ -149,7 +149,7 @@ const Services = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Grease Trap in the floor
+                    Grease Trap: in the Floor
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     The problem with FOGs is that they clog pipes. When fat
@@ -213,7 +213,7 @@ const Services = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Grease Trap in the kitchen
+                    Grease Trap: in the Kitchen
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     Any commercial store or restaurant that prepares food needs
@@ -274,7 +274,7 @@ const Services = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Outside Grease Trap
+                    Grease Trap: Outside
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     Grease traps are no place to cut corners, especially when

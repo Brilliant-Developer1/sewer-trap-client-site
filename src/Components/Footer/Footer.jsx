@@ -12,7 +12,6 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import './Footer.css';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
@@ -44,7 +43,7 @@ const Footer = () => {
               Address
             </Typography>
             <Typography variant="body1">PO Box 16292</Typography>
-            <Typography variant="body1">Savannah,GA. 31416</Typography>
+            <Typography variant="body1">Savannah, GA. 31416</Typography>
           </Item>
           <Item>
             <LocalPhoneIcon fontSize="large" />
@@ -60,7 +59,7 @@ const Footer = () => {
               Email
             </Typography>
             <Typography variant="body1">stp.ga777@gmail.com</Typography>
-            <Typography variant="body1">mail@georgiagrease.com</Typography>
+            <Typography variant="body1">stp.official777.com</Typography>
           </Item>
           <Item>
             <AccessTimeIcon fontSize="large" />
@@ -85,10 +84,10 @@ const Footer = () => {
           </a>{' '}
         </Typography>
       </Box>
-      <MessengerCustomerChat
+      {/*<MessengerCustomerChat
         pageId="266377000079581"
         appId="2032616256908551"
-      />
+        />*/}
     </Box>
   );
 };

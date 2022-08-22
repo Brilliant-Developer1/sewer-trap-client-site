@@ -16,9 +16,9 @@ const Header = () => {
           backgroundRepeat: 'no-repeat',
           backgroundAttachment: 'fixed',
           backgroundColor: 'white',
-          backgroundPosition: 'center',
+          backgroundPosition: { xs: 'right center', sm: 'center' },
           backgroundSize: 'cover',
-          height: 600,
+          height: 800,
           width: '100%',
           display: 'flex',
           justifyContent: 'center',
@@ -27,17 +27,22 @@ const Header = () => {
       >
         <Box
           sx={{
-            marginTop: { xs: 0, sm: 0, md: 15 },
-            width: { xs: '100%', sm: '60%', md: '40%' },
+            width: { xs: '100%', sm: '60%', md: '35%' },
             padding: 0,
           }}
         >
-          <Box sx={{ background: 'rgba(0, 0, 0, 0.5)', color: 'white' }}>
+          <Box
+            sx={{
+              background: 'rgba(0, 0, 0, 0.5)',
+              color: 'white',
+              padding: '6px',
+            }}
+          >
             <Typography align="center" variant="h5" pt={8}>
               Let Us Service Your Tanks
             </Typography>
             <StyledHeroText pb={8} align="center" variant="h5">
-              WE ARE SPECIALIZE IN RESTAURANT, GREASE TRAPS & INTERCEPTORS.
+              WE SPECIALIZE IN RESTAURANT, GREASE TRAPS & INTERCEPTORS.
             </StyledHeroText>
           </Box>
         </Box>

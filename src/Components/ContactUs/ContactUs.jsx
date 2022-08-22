@@ -32,10 +32,10 @@ const ContactUs = () => {
 
     emailjs
       .sendForm(
-        'myPortfolio',
-        'template_9q12426',
+        'service_9i57ktj',
+        'template_oipl5o8',
         form.current,
-        'user_XbsR6kYveBHf6kkhG7m43'
+        '17Mzf6LReVSjZSeM2'
       )
       .then(
         result => {
@@ -93,7 +93,7 @@ const ContactUs = () => {
             </Card>
           </Box>
 
-          <Item sx={{ width: { xs: '96%', sm: '100vh', md: '50%' } }}>
+          <Item sx={{ width: { xs: '96%', sm: '80%', md: '50%' } }}>
             <Box>
               <form ref={form} onSubmit={sendEmail}>
                 <Stack padding={3} direction="column" spacing={2}>
