@@ -90,9 +90,14 @@ const AboutUs = () => {
                 </Typography>
                 <Typography variant="h5" fontWeight={'500'} component="div">
                   <b>
-                    <span style={{ color: '#ef233c' }}>
+                    <Typography
+                      variant="h5"
+                      align="center"
+                      fontWeight={'700'}
+                      style={{ color: '#ef233c' }}
+                    >
                       Here's What we do, that no other company does:
-                    </span>
+                    </Typography>
                     <ol>
                       <li>
                         We don't charge our clients extra for emergency calls

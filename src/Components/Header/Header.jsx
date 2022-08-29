@@ -16,7 +16,7 @@ const Header = () => {
           backgroundRepeat: 'no-repeat',
           backgroundAttachment: 'fixed',
           backgroundColor: 'white',
-          backgroundPosition: { xs: 'right center', sm: 'center' },
+          backgroundPosition: { xs: 'cover', sm: 'center' },
           backgroundSize: 'cover',
           height: 800,
           width: '100%',

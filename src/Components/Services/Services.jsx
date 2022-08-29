@@ -60,9 +60,9 @@ const Services = () => {
       <Container sx={{ mt: 1 }}>
         <Typography
           color={'#ef233c'}
-          fontWeight={700}
+          fontWeight={600}
           align="center"
-          variant="h4"
+          sx={{ fontSize: { xs: '1.3rem', sm: '2rem' } }}
         >
           Grease trap cleaning solutions for: <br /> RESTAURANT • COMMERCIAL &
           INDUSTRIAL TANKS

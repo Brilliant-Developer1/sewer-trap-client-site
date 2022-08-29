@@ -97,9 +97,23 @@ const Navbar = props => {
             horizontal: 'left',
           }}
         >
-          <Box sx={{ width: 350, height: '90vh' }}>
+          <Box sx={{ width: 340, height: '60vh' }}>
             {MenuItems.map(item => (
-              <MenuItem sx={{ cursor: 'pointer' }}>{item.Name}</MenuItem>
+              <MenuItem sx={{ cursor: 'pointer' }}>
+                <a
+                  key={item.Name}
+                  className="Nav-links"
+                  style={{
+                    textDecoration: 'none',
+                    color: 'black',
+                    fontSize: '1.2rem',
+                  }}
+                  href={`#${item.Link}`}
+                  onClick={() => SetOpen(!open)}
+                >
+                  {item.Name}
+                </a>
+              </MenuItem>
             ))}
           </Box>
         </Menu>
