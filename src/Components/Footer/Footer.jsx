@@ -58,8 +58,8 @@ const Footer = () => {
             <Typography variant="h5" fontWeight="bold" paddingTop="6px">
               Email
             </Typography>
+            <Typography variant="body1">services@stpga777.com</Typography>
             <Typography variant="body1">stp.ga777@gmail.com</Typography>
-            <Typography variant="body1">stp.official777.com</Typography>
           </Item>
           <Item>
             <AccessTimeIcon fontSize="large" />
@@ -71,9 +71,11 @@ const Footer = () => {
           </Item>
         </Stack>
       </Container>
+
+      {/*
       <Box sx={{ background: '#bc0411', padding: 1 }}>
         <Typography align="center" variant="body1">
-          Made With 🤍 By{' '}
+          Made With 🤍 By
           <a
             className="createdBy"
             href="https://abid-portfolio.netlify.app/"
@@ -81,10 +83,10 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             Brilliant-Developer
-          </a>{' '}
+          </a>
         </Typography>
       </Box>
-      {/*<MessengerCustomerChat
+      <MessengerCustomerChat
         pageId="266377000079581"
         appId="2032616256908551"
         />*/}

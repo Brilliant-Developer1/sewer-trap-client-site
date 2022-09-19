@@ -2,7 +2,6 @@ import {
   Box,
   Button,
   Card,
-  CardActionArea,
   CardContent,
   CardMedia,
   Container,
@@ -14,8 +13,11 @@ import {
   Typography,
 } from '@mui/material';
 import React from 'react';
-import CallToAction from '../CallToAction/CallToAction';
+
 import './Services.css';
+import greaseTrapOutside from '../../Assets/Images/GreaseTrapOutside.jpg';
+import greaseTrapintheFloor from '../../Assets/Images/GreaseTrapintheFloor.png';
+import greaseTrapStanding from '../../Assets/Images/GreaseTrapStanding.jpg';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -79,7 +81,7 @@ const Services = () => {
               <CardMedia
                 component="img"
                 height="200"
-                image="https://dmsplumbing.co.za/wp-content/uploads/2020/10/grease_trap_before_after.jpg"
+                image={greaseTrapStanding}
                 alt="green iguana"
               />
               <CardContent>
@@ -133,7 +135,7 @@ const Services = () => {
               <CardMedia
                 component="img"
                 height="200"
-                image="https://mastinsepticandwell.com/images/Commercial-Grease-Trap-Pumping.jpg"
+                image={greaseTrapOutside}
                 alt="green iguana"
               />
               <CardContent>
@@ -186,7 +188,7 @@ const Services = () => {
               <CardMedia
                 component="img"
                 height="200"
-                image="https://hulseyenvironmental.com/wp-content/uploads/2020/09/Hulsey-Environmental-Grease-Trap-Cleaning-Partner.png"
+                image={greaseTrapintheFloor}
                 alt="green iguana"
               />
               <CardContent>
@@ -234,7 +236,6 @@ const Services = () => {
             </Card>
           </Item>
         </Stack>
-        <CallToAction />
       </Container>
     </div>
   );
