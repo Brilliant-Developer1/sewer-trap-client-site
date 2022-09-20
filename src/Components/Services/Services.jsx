@@ -56,7 +56,7 @@ const Services = () => {
   return (
     <div>
       <Toolbar id="services" />
-      <Container sx={{ mt: 1 }}>
+      <Container sx={{ mt: { xs: 0, sm: 1 } }}>
         <Typography
           color={'#ef233c'}
           fontWeight={600}

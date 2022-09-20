@@ -110,8 +110,8 @@ const ContactUs = () => {
                   <Box>
                     <TextField
                       type="email"
-                      label="Email"
                       placeholder="Enter your Email"
+                      label="Email"
                       variant="filled"
                       fullWidth
                       required

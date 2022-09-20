@@ -58,16 +58,16 @@ const Footer = () => {
             <Typography variant="h5" fontWeight="bold" paddingTop="6px">
               Email
             </Typography>
-            <Typography variant="body1">services@stpga777.com</Typography>
-            <Typography variant="body1">stp.ga777@gmail.com</Typography>
+            <Typography variant="body1">service@stpga777.com</Typography>
           </Item>
           <Item>
             <AccessTimeIcon fontSize="large" />
             <Typography variant="h5" fontWeight="bold" paddingTop="6px">
-              Working Hours
+              Office hours:
             </Typography>
-            <Typography variant="body1">Mon to Sat - 9 AM to 11 PM</Typography>
-            <Typography variant="body1">Sunday 10 AM to 6 PM</Typography>
+            <Typography variant="body1">
+              Monday - Friday - 9 AM to 5 PM
+            </Typography>
           </Item>
         </Stack>
       </Container>

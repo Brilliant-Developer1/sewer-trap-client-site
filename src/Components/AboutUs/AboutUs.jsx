@@ -66,7 +66,7 @@ const AboutUs = () => {
                   component="div"
                   width={{ xs: '100%', sm: '90%', md: '65%' }}
                 >
-                  WE SPECIALIZE IN PUMPING GREASE TRAPS, WHERE ALL WORK IS DONE
+                  WE SPECIALIZE IN PUMPING GREASE TRAPS WHERE ALL WORK IS DONE
                   WITH PRIDE AND PERFECTION.
                 </Typography>
                 <Typography
@@ -82,10 +82,7 @@ const AboutUs = () => {
                   <ul>
                     <li>We are located in Savannah, Georgia</li>
                     <li>We are certified, licensed and insured</li>
-                    <li>
-                      We will pump, clean & save your business thousands of
-                      dollars
-                    </li>
+                    <li>We service Chatham County and surrounding areas</li>
                   </ul>
                 </Typography>
                 <Typography variant="h5" fontWeight={'500'} component="div">
@@ -96,11 +93,20 @@ const AboutUs = () => {
                       fontWeight={'700'}
                       style={{ color: '#ef233c' }}
                     >
-                      Here's What we do, that no other company does:
+                      Here's what we do, that no other company does:
                     </Typography>
                     <ol>
                       <li>
-                        We don't charge our clients extra for emergency calls
+                        We will pump and clean your grease trap for less, saving
+                        your business{' '}
+                        <Typography
+                          variant="h5"
+                          fontWeight={'700'}
+                          sx={{ display: { xs: 'inline', sm: 'block' } }}
+                        >
+                          {' '}
+                          thousands of dollars
+                        </Typography>
                       </li>
                       <li>We are AVAILABLE DAY & NIGHT</li>
                       <li>
