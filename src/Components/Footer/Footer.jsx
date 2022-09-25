@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Container,
   Paper,
   Stack,
@@ -58,16 +59,21 @@ const Footer = () => {
             <Typography variant="h5" fontWeight="bold" paddingTop="6px">
               Email
             </Typography>
-            <Typography variant="body1">service@stpga777.com</Typography>
+
+            <a
+              href="mailto:service@stpga777.com?subject=Information about STP&body=Hi I would like to know"
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
+              service@stpga777.com
+            </a>
           </Item>
           <Item>
             <AccessTimeIcon fontSize="large" />
             <Typography variant="h5" fontWeight="bold" paddingTop="6px">
-              Office hours:
+              Office Hours:
             </Typography>
-            <Typography variant="body1">
-              Monday - Friday - 9 AM to 5 PM
-            </Typography>
+            <Typography variant="body1">Monday - Friday</Typography>
+            <Typography variant="body1">9 AM to 5 PM</Typography>
           </Item>
         </Stack>
       </Container>

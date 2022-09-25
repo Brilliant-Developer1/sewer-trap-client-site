@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import './Navbar.css';
 import logo from '../../Assets/Images/logo-2.2.png';
+import logo1 from '../../Assets/Images/Logo-1.1.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -41,8 +42,11 @@ const Navbar = props => {
     <React.Fragment>
       <AppBar position="fixed" sx={{ background: 'white', color: 'black' }}>
         <StyledToolbar>
-          <StyledLogo sx={{ width: { xs: '160px', sm: '180px', md: '215px' } }}>
-            <img width={'100%'} src={logo} alt="sewerlogo" />
+          <StyledLogo sx={{ width: { xs: '65px', sm: '180px', md: '215px' } }}>
+            <picture>
+              <source media="(min-width: 480px)" width={'100%'} srcset={logo} />
+              <img width={'60px'} src={logo1} alt="sewerlogo" />
+            </picture>
           </StyledLogo>
           <StyledMenu sx={{ display: { xs: 'none', sm: 'none', md: 'flex' } }}>
             {MenuItems.map(item => (
@@ -59,6 +63,8 @@ const Navbar = props => {
                 {item.Name}
               </a>
             ))}
+          </StyledMenu>
+          <Box sx={{ display: { xs: 'none', sm: 'block', md: 'block' } }}>
             <a href="tel:+91 123 456 78910" style={{ textDecoration: 'none' }}>
               <Button
                 className="phone-call"
@@ -70,17 +76,38 @@ const Navbar = props => {
                 (470) 292-9078
               </Button>
             </a>
-          </StyledMenu>
-          <StyledSocial>
-            <FacebookIcon></FacebookIcon>
-            <InstagramIcon></InstagramIcon>
-            <TwitterIcon></TwitterIcon>
+          </Box>
+          <Box sx={{ display: { xs: 'none', sm: 'block', md: 'block' } }}>
+            <StyledSocial>
+              <FacebookIcon></FacebookIcon>
+              <InstagramIcon></InstagramIcon>
+              <TwitterIcon></TwitterIcon>
+            </StyledSocial>
+          </Box>
+          <Box sx={{ display: { xs: 'block', sm: 'none', md: 'none' } }}>
+            <a href="tel:+91 123 456 78910" style={{ textDecoration: 'none' }}>
+              <Button
+                className="phone-call"
+                type="call"
+                sx={{ background: '#ef233c' }}
+                variant="contained"
+              >
+                <img
+                  src={Callgif}
+                  alt="call"
+                  width={20}
+                  height={20}
+                  style={{ paddingRight: '5px' }}
+                />
+                CALL NOW
+              </Button>
+            </a>
+          </Box>
 
-            <MenuIcon
-              sx={{ display: { xs: 'block', sm: 'block', md: 'none' } }}
-              onClick={() => SetOpen(!open)}
-            ></MenuIcon>
-          </StyledSocial>
+          <MenuIcon
+            sx={{ display: { xs: 'block', sm: 'block', md: 'none' } }}
+            onClick={() => SetOpen(!open)}
+          ></MenuIcon>
         </StyledToolbar>
 
         <Menu

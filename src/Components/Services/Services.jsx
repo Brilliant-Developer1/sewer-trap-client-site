@@ -13,6 +13,7 @@ import {
   Typography,
 } from '@mui/material';
 import React from 'react';
+import Callgif from '../../Assets/Images/58-call-phone-solid.gif';
 
 import './Services.css';
 import greaseTrapOutside from '../../Assets/Images/GreaseTrapOutside.jpg';
@@ -55,8 +56,31 @@ const Services = () => {
 
   return (
     <div>
-      <Toolbar id="services" />
-      <Container sx={{ mt: { xs: 0, sm: 1 } }}>
+      <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+        <Box
+          sx={{
+            marginTop: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <a href="tel:+91 123 456 78910" style={{ textDecoration: 'none' }}>
+            <Button
+              className="phone-call"
+              type="call"
+              sx={{ background: '#ef233c' }}
+              variant="contained"
+            >
+              <img src={Callgif} alt="call" width={25} height={25} />
+              (470) 292-9078
+            </Button>
+          </a>
+          <Typography variant="h6">CALL NOW!!!</Typography>
+        </Box>
+      </Box>
+      <Toolbar sx={{ display: { xs: 'none', sm: 'block' } }} id="services" />
+      <Container sx={{ mt: 2 }}>
         <Typography
           color={'#ef233c'}
           fontWeight={600}
@@ -172,7 +196,7 @@ const Services = () => {
                         unchecked, fats, oils, and grease (FOG) that enter the
                         sewage systems can plug drain lines, block pipes, and
                         clog the regions sewers. Proper grease trap cleaning,
-                        pumping and maintenance can prevent problems for you
+                        pumping and maintenance can prevent problems for your
                         business such as blockages, overflows, bad odors, and
                         potential fines or closures.
                       </Typography>

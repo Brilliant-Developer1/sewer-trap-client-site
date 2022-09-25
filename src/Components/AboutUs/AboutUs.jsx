@@ -16,7 +16,32 @@ const Item = styled(Paper)(({ theme }) => ({}));
 const AboutUs = () => {
   return (
     <div>
-      <Toolbar id="aboutus" />
+      <div id="aboutus">
+        <Box>
+          <Box
+            sx={{
+              marginTop: 4,
+              marginBottom: 4,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
+          >
+            <a href="tel:+91 123 456 78910" style={{ textDecoration: 'none' }}>
+              <Button
+                className="phone-call"
+                type="call"
+                sx={{ background: '#ef233c' }}
+                variant="contained"
+              >
+                <img src={Callgif} alt="call" width={25} height={25} />
+                (470) 292-9078
+              </Button>
+            </a>
+            <Typography variant="h6">CALL NOW!!!</Typography>
+          </Box>
+        </Box>
+      </div>
       <Box
         sx={{
           backgroundImage: `url(${sewertruck1})`,
@@ -74,7 +99,11 @@ const AboutUs = () => {
                   variant="h5"
                   fontWeight={'500'}
                   component="div"
-                  sx={{ padding: '15px', color: '#ef233c' }}
+                  sx={{
+                    fontSize: { xs: '1.3rem', sm: '1.8rem' },
+                    marginTop: { xs: 2, sm: 3 },
+                    color: '#ef233c',
+                  }}
                 >
                   RESTAURANT • COMMERCIAL & INDUSTRIAL
                 </Typography>

@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Card,
   CardActionArea,
   CardMedia,
@@ -16,6 +17,7 @@ import emailjs from '@emailjs/browser';
 import contactUsTruck from '../../Assets/Images/contactUs-truck.png';
 import swal from 'sweetalert';
 import './ContactUs.css';
+import Callgif from '../../Assets/Images/58-call-phone-solid.gif';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -52,7 +54,7 @@ const ContactUs = () => {
     <div>
       <Toolbar id="contactus" />
 
-      <Container sx={{ mt: 3 }}>
+      <Container>
         <Typography
           color={'#ef233c'}
           fontWeight={700}
@@ -61,10 +63,29 @@ const ContactUs = () => {
         >
           Contact Us
         </Typography>
-        <Typography color={'textSecondary'} align="center" variant="h6">
-          Fill up the form and we will get back to you within 24 Hours.
-        </Typography>
-
+        <Box>
+          <Box
+            sx={{
+              marginTop: 1,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
+          >
+            <a href="tel:+91 123 456 78910" style={{ textDecoration: 'none' }}>
+              <Button
+                className="phone-call"
+                type="call"
+                sx={{ background: '#ef233c' }}
+                variant="contained"
+              >
+                <img src={Callgif} alt="call" width={25} height={25} />
+                (470) 292-9078
+              </Button>
+            </a>
+            <Typography variant="h6">CALL NOW!!!</Typography>
+          </Box>
+        </Box>
         <Stack
           sx={{ mt: 3 }}
           justifyContent={'space-around'}
@@ -74,7 +95,7 @@ const ContactUs = () => {
         >
           <Box
             sx={{
-              height: { xs: '100', sm: '100%', md: '410px' },
+              height: { xs: '100', sm: '100%', md: '535px', lg: '502px' },
               boxShadow: 1,
               display: 'flex',
               padding: { xs: 2, sm: 3 },
@@ -97,6 +118,16 @@ const ContactUs = () => {
             <Box>
               <form ref={form} onSubmit={sendEmail}>
                 <Stack padding={3} direction="column" spacing={2}>
+                  <Typography
+                    color={'#ef233c'}
+                    fontWeight="bold"
+                    align="center"
+                    variant="h6"
+                    sx={{ fontSize: { xs: '1.2rem', sm: '1.4rem' } }}
+                  >
+                    CONTACT US FOR YOUR SERVICE NEEDS/DISCOUNT INFORMATION
+                    TODAY!
+                  </Typography>
                   <Box>
                     <TextField
                       label="Full Name"

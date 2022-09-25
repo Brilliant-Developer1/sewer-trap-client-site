@@ -17,22 +17,22 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const allComments = [
   {
     Comments:
-      'They did a Awesome job at my home. Arrived on time and did everything they said they would. Highly recommended!!!',
+      'Sewer Trap Pros did an AWESOME  job in my home! They arrived on time and did everything they said they would! Highly recommended!!!',
     personName: '- Byron Paul',
   },
   {
     Comments:
-      'These guys helped us out when we were in a pinch. Called early on Friday and they came out same day and saved our weekend. They are very professional, did a great job and would highly recommend them to anyone!!!',
+      'These guys helped us out when we were in a pinch. I called early on Friday and they came out same day and saved our weekend.They are very professional and did a great job and I would use them again, if needed in the future. Thanks guys.',
     personName: '- Sidney Cole',
   },
   {
     Comments:
-      'I Loved that there prices were reasonable, I was prepared to pay a lot more . They called before arriving and gave me exact cost so no surprises. I highly recommend Bob and William Elliott .',
+      'I Loved that their prices were reasonable, I was prepared to pay a lot more. They called before arriving and gave me the exact cost so no surprises there. I highly recommend them.',
     personName: '- Tyler Pascall',
   },
   {
     Comments:
-      'Fantastic service. Very clear about the issues. Professional demeanor. Friendly. Reasonably priced. Thorough and complete job. Highly recommended.',
+      'Fantastic service. Very clear about the issues. Professional demeanor friendly and reasonably priced. They were thorough on the job as well. I have actually recommended them to all of my family friends .',
     personName: '- Miranda Noble',
   },
 ];
@@ -64,15 +64,18 @@ const Testimonials = () => {
         flexDirection: 'column',
         alignItems: 'center',
         marginTop: 6,
-        marginBottom: 10,
       }}
     >
       <Typography
         color={'#ef233c'}
         fontWeight={700}
         align="center"
-        variant="h3"
-        sx={{ paddingTop: 4, paddingBottom: 4 }}
+        variant="h4"
+        sx={{
+          marginTop: 3,
+          marginBottom: 3,
+          fontSize: { xs: '2rem', sm: '2.5rem' },
+        }}
       >
         Testimonials
       </Typography>
